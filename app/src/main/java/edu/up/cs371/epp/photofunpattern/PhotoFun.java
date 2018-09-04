@@ -49,6 +49,10 @@ public class PhotoFun extends AppCompatActivity {
                 (Button) findViewById(R.id.brightnessFilterButton);
         brightnessFilterButton.setOnClickListener
                 (new brightnessFilterButtonListener());
+        Button redFilterButton =
+                (Button) findViewById(R.id.redFilterButton);
+        redFilterButton.setOnClickListener
+                (new redFilterButtonListener());
     }
 
     /*
@@ -71,6 +75,19 @@ public class PhotoFun extends AppCompatActivity {
             implements View.OnClickListener {
         public void onClick(View button) {
             BrightnessFilter filter = new BrightnessFilter();
+            myNewImageView.setImageBitmap(filter.apply(myOriginalBmp));
+        }
+    }
+
+    /*
+     * class redFilterButtonListener this inner class defines the action for the
+     * brightness filter
+     * button.
+     */
+    private class redFilterButtonListener
+            implements View.OnClickListener {
+        public void onClick(View button) {
+            RedFilter filter = new RedFilter();
             myNewImageView.setImageBitmap(filter.apply(myOriginalBmp));
         }
     }

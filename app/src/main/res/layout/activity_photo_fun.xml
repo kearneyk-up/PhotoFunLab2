@@ -5,14 +5,14 @@
     android:id="@+id/activity_photo_fun"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.up.cs371.epp.photofun.PhotoFun"
+    tools:context="edu.up.cs371.epp.photofunpattern.PhotoFun"
     android:orientation="vertical">
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="90">
+        android:layout_weight="85">
 
         <ImageView
             android:id="@+id/originalImage"
@@ -37,19 +37,19 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="10">
+        android:layout_weight="15">
 
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="2" />
+            android:layout_weight="0" />
 
         <Button
             android:text="Gray Filter"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:id="@+id/grayFilterButton"
-            android:layout_weight="3"
+            android:layout_weight="4"
             android:textSize="18sp" />
 
         <Space
@@ -62,12 +62,25 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:id="@+id/brightnessFilterButton"
-            android:layout_weight="3"
+            android:layout_weight="5"
             android:textSize="18sp" />
 
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="2" />
+            android:layout_weight="0.2" />
+
+        <Button
+            android:text="Red Filter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/redFilterButton"
+            android:layout_weight="4"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
     </LinearLayout>
 </LinearLayout>
